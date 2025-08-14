@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">FrontendBook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="more_options">More Options</string>
+    <string name="menu_add_list">Liste Ekle</string>
+    <string name="followers_count">%1$d Followers</string>
+    <string name="following_count">%1$d Following</string>
+    <string name="settings">Settings</string>
+    <string name="profile_image_desc">Profile image</string>
+    <string name="go_icon_desc">Go to detail</string>
+    <string name="followers">22 Followers</string>
+    <string name="following">25 Following</string>
+    <string name="read">Read</string>
+    <string name="readlist">Readlist</string>
+    <string name="lists">Lists</string>
+    <string name="likes">Likes</string>
+    <string name="username_placeholder">Username </string>
+    <string name="title_followers">Followers</string>
+    <string name="title_following">Followings </string>
+    <string name="avatar_description_1">Bookworm avatar</string>
+    <string name="avatar_description_2">Book friends avatar</string>
+    <string name="avatar_description_3">Bibliophile avatar</string>
+    <string name="avatar_description_4">Cat reading avatar</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="follow">Follow</string>
+
+        <!-- Mevcut stringlerin altına ekleyebilirsiniz -->
+    <string name="see_more_desc">See More</string>
+    <string name="see_more_label">See More</string>
+    <string name="add_to_list_desc">Add To List</string>
+    <string name="add_to_list_label">Add To List</string>
+    <string name="add_book">Add Book</string>
+    <string name="no_reviews_yet">no reviews yet\n</string>
+
+
+</resources>

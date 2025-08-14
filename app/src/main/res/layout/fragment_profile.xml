@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment"
+    android:background="@color/backgroundPrimary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/profileHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headerColor"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+
+
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/settings"
+            android:src="@drawable/settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/stars_rated" />
+
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@drawable/circle_background"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/profile_image_desc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar"
+            android:elevation="8dp"
+            android:outlineProvider="none"
+            android:clipToOutline="false"
+            android:translationZ="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSettings" />
+
+
+        <TextView
+            android:id="@+id/usernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Fernando Muslera"
+            android:textColor="@color/textPrimary"
+            android:shadowColor="#FFD700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/username_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileImage"
+
+            />
+
+        <Button
+            android:id="@+id/btnFollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/buttonPrimary"
+            android:text="@string/followers"
+            android:textColor="@color/button_textPrimary"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/usernameText" />
+
+        <Button
+            android:id="@+id/btnFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/buttonPrimary"
+            android:text="@string/following"
+            android:textColor="@color/button_textPrimary"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/usernameText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headerColor">
+
+        <LinearLayout
+            android:id="@+id/btnRead"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="160dp"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/read"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/p_read"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="300dp"
+                android:src="@drawable/p_read"
+                app:tint="@color/footer_icons" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/go_icon_desc"
+                android:src="@drawable/ok"
+                app:tint="@color/footer_icons" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btnReadlist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnRead">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/readlist"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/p_readlist"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="280dp"
+                android:src="@drawable/p_readlist"
+                app:tint="@color/footer_icons" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/go_icon_desc"
+                android:src="@drawable/ok"
+                app:tint="@color/footer_icons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnLists"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnReadlist">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lists"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/p_lists"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="300dp"
+                android:src="@drawable/p_lists"
+                app:tint="@color/footer_icons" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/go_icon_desc"
+                android:src="@drawable/ok"
+                app:tint="@color/footer_icons" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnLikes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLists">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/likes"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/p_like"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="300dp"
+                android:src="@drawable/p_like"
+                app:tint="@color/footer_icons" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/go_icon_desc"
+                android:src="@drawable/ok"
+                app:tint="@color/footer_icons" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

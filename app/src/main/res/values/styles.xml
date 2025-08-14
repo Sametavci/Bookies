@@ -1,0 +1,54 @@
+<resources>
+
+    <style name="BottomNav_NoIndicator">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomRoundedButton" parent="Widget.Material3.Button">
+        <item name="cornerSize">16dp</item>
+        <item name="backgroundTint">@color/buttonPrimary</item>
+    </style>
+
+    <!-- Hint metni stili -->
+    <style name="BookiesHintAppearance" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- TextInputLayout için özel outlined stil -->
+    <style name="Widget.Bookies.TextInputLayout.OutlinedBox"
+        parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeColor">@color/line</item>
+        <item name="hintTextAppearance">@style/BookiesHintAppearance</item>
+        <item name="android:textColorHint">@color/textSecondary</item>
+    </style>
+
+    <style name="CustomRatingBarStyle" parent="@style/Widget.AppCompat.RatingBar">
+        <item name="colorControlActivated">@color/buttonSecondary</item>
+        <item name="colorControlNormal">@color/stars_rated</item>    <!-- yıldız rengi -->
+    </style>
+
+    <style name="CustomFilterChip" parent="Widget.Material3.Chip.Assist">
+
+        <item name="chipBackgroundColor">@color/backgroundSecondary</item>
+
+
+        <item name="chipStrokeColor">@color/textSecondary</item>
+        <item name="chipStrokeWidth">1dp</item>
+
+        <item name="android:textColor">@color/black</item>
+
+
+        <item name="chipCornerRadius">8dp</item>
+
+
+        <item name="checkedIconVisible">false</item>
+        <item name="chipSurfaceColor">@color/backgroundSecondary</item>
+        <item name="chipIconTint">@color/textSecondary</item>
+        <item name="closeIconTint">@color/textSecondary</item>
+    </style>
+
+
+
+</resources>
